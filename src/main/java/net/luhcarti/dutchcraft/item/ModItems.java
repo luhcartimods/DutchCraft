@@ -5,6 +5,7 @@ import net.luhcarti.dutchcraft.entity.ModEntities;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,6 +36,9 @@ public class ModItems {
 
     public static final RegistryObject<MobBucketItem> HERRING_BUCKET =
             ITEMS.register("herring_bucket", () -> new MobBucketItem(() -> ModEntities.HERRING.get(), () -> Fluids.WATER, ()-> SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> HERRING_SPAWN_EGG =
+            ITEMS.register("herring_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.HERRING, 0x7e9680, 0xc5d1c5, new Item.Properties()));
 
 
 

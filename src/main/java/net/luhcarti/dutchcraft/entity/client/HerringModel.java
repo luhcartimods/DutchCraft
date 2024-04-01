@@ -5,6 +5,7 @@ package net.luhcarti.dutchcraft.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.luhcarti.dutchcraft.entity.animations.ModAnimationDefinitions;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
@@ -44,7 +45,8 @@ public class HerringModel<T extends Entity> extends HierarchicalModel<T> {
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.animateWalk(ModAnimationDefinitions.HERRING_SWIM, limbSwing, limbSwingAmount, 2, 2.5f);
 	}
 
 	@Override

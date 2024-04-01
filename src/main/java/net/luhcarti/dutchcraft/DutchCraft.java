@@ -6,6 +6,7 @@ import net.luhcarti.dutchcraft.entity.ModEntities;
 import net.luhcarti.dutchcraft.entity.client.HerringRenderer;
 import net.luhcarti.dutchcraft.item.ModCreativeModeTabs;
 import net.luhcarti.dutchcraft.item.ModItems;
+import net.luhcarti.dutchcraft.loot.ModLootModifiers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -42,6 +43,7 @@ public class DutchCraft
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
