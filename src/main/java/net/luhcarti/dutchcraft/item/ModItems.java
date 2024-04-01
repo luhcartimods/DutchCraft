@@ -3,11 +3,10 @@ package net.luhcarti.dutchcraft.item;
 import net.luhcarti.dutchcraft.DutchCraft;
 import net.luhcarti.dutchcraft.entity.ModEntities;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -34,8 +33,8 @@ public class ModItems {
     public static final RegistryObject<Item> GOUDA = ITEMS.register("gouda",
             () -> new Item(new Item.Properties().food(ModFoods.GOUDA)));
 
-    public static final RegistryObject<Item> HERRING_BUCKET = ITEMS.register("herring_bucket",
-            () -> new MobBucketItem(ModEntities.HERRING.get(), Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH, (new Item.Properties()).stacksTo(1)));
+    public static final RegistryObject<MobBucketItem> HERRING_BUCKET =
+            ITEMS.register("herring_bucket", () -> new MobBucketItem(() -> ModEntities.HERRING.get(), () -> Fluids.WATER, ()-> SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
 
 
 

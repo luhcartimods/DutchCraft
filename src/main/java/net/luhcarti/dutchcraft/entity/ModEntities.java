@@ -16,7 +16,7 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, DutchCraft.MOD_ID);
 
     public static final RegistryObject<EntityType<HerringEntity>> HERRING =
-            ENTITY_TYPES.register("herring", () -> EntityType.Builder.of(HerringEntity::new, MobCategory.WATER_CREATURE)
+            ENTITY_TYPES.register("herring", () -> EntityType.Builder.of(HerringEntity::new, MobCategory.CREATURE)
                     .sized(0.7f, 0.4f).build("herring"));
 
 
