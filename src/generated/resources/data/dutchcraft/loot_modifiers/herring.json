@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "weight": 100,
           "name": "dutchcraft:raw_herring"
         }
       ]
