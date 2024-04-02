@@ -22,7 +22,7 @@ public class ModItems {
     public static final RegistryObject<Item> PEA_STEW = ITEMS.register("pea_stew",
             () -> new Item(new Item.Properties().food(ModFoods.PEA_STEW)));
 
-    public static final RegistryObject<Item> RAW_HERRING = ITEMS.register("herring",
+    public static final RegistryObject<Item> RAW_HERRING = ITEMS.register("raw_herring",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_HERRING)));
 
     public static final RegistryObject<Item> COOKED_HERRING = ITEMS.register("cooked_herring",

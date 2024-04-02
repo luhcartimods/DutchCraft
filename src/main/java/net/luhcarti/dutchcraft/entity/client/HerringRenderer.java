@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class HerringRenderer extends MobRenderer<HerringEntity, HerringModel<HerringEntity>> {
     public HerringRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new HerringModel<>(pContext.bakeLayer(ModModelLayers.HERRING_LAYER)), 2f);
+        super(pContext, new HerringModel<>(pContext.bakeLayer(ModModelLayers.HERRING_LAYER)), 0.2f);
     }
 
     @Override
