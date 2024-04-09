@@ -1,0 +1,10 @@
+{
+  "type": "dutchcraft:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "dutchcraft:entities/herring"
+    }
+  ],
+  "item": "dutchcraft:raw_herring"
+}
