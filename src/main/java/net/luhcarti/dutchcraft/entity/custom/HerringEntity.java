@@ -8,8 +8,6 @@ import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.animal.AbstractSchoolingFish;
-import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Bucketable;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
@@ -75,6 +73,6 @@ public class HerringEntity extends AbstractSchoolingFish {
 
     @Override
     public ItemStack getBucketItemStack() {
-        return new ItemStack(ModItems.HERRING_BUCKET.get());
+        return new ItemStack(ModItems.BUCKET_OF_HERRING.get());
     }
 }
