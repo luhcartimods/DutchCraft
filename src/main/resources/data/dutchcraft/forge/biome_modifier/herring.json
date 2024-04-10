@@ -1,10 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "#dutchcraft:herring_biomes",
+  "biomes": "minecraft:river",
   "spawners": {
     "type": "dutchcraft:herring",
-    "weight": 100,
+    "maxCount": 5,
     "minCount": 1,
-    "maxCount": 5
+    "weight": 100
   }
 }

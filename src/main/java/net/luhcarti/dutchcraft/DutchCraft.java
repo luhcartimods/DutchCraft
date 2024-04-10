@@ -2,6 +2,7 @@ package net.luhcarti.dutchcraft;
 
 import com.mojang.logging.LogUtils;
 import net.luhcarti.dutchcraft.block.ModBlocks;
+import net.luhcarti.dutchcraft.datagen.ModEntitySpawn;
 import net.luhcarti.dutchcraft.entity.ModEntities;
 import net.luhcarti.dutchcraft.entity.client.HerringRenderer;
 import net.luhcarti.dutchcraft.item.ModCreativeModeTabs;
@@ -44,6 +45,7 @@ public class DutchCraft
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModEntitySpawn.SERIALIZER.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
