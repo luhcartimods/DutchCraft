@@ -1,7 +1,7 @@
 package net.luhcarti.dutchcraft.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import net.luhcarti.dutchcraft.DutchFoods;
+import net.luhcarti.dutchcraft.DutchCraft;
 import net.luhcarti.dutchcraft.entity.custom.HerringEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -15,7 +15,7 @@ public class HerringRenderer extends MobRenderer<HerringEntity, HerringModel<Her
 
     @Override
     public ResourceLocation getTextureLocation(HerringEntity herringEntity) {
-        return new ResourceLocation(DutchFoods.MOD_ID, "textures/entity/herring.png");
+        return new ResourceLocation(DutchCraft.MOD_ID, "textures/entity/herring.png");
     }
 
     @Override

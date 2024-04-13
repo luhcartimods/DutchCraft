@@ -21,13 +21,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(DutchFoods.MOD_ID)
-public class DutchFoods
+@Mod(DutchCraft.MOD_ID)
+public class DutchCraft
 {
-    public static final String MOD_ID = "dutchfoods";
+    public static final String MOD_ID = "dutchcraft";
 
     private static final Logger LOGGER = LogUtils.getLogger();
-    public DutchFoods()
+    public DutchCraft()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

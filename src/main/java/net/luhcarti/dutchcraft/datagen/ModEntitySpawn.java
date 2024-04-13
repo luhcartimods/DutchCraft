@@ -2,7 +2,7 @@ package net.luhcarti.dutchcraft.datagen;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.luhcarti.dutchcraft.DutchFoods;
+import net.luhcarti.dutchcraft.DutchCraft;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
 import net.minecraft.world.entity.MobCategory;
@@ -17,7 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 public record ModEntitySpawn (HolderSet<Biome> biomes, MobSpawnSettings.SpawnerData spawn) implements BiomeModifier {
 
     public static DeferredRegister<Codec<? extends BiomeModifier>> SERIALIZER = DeferredRegister
-            .create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, DutchFoods.MOD_ID);
+            .create(ForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, DutchCraft.MOD_ID);
 
     static RegistryObject<Codec<ModEntitySpawn>> HERRING_SPAWN_CODEC = SERIALIZER.register("mobspawns",
             () -> RecordCodecBuilder.create(builder -> builder

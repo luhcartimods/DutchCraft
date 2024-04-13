@@ -1,6 +1,6 @@
 package net.luhcarti.dutchcraft.datagen;
 
-import net.luhcarti.dutchcraft.DutchFoods;
+import net.luhcarti.dutchcraft.DutchCraft;
 import net.luhcarti.dutchcraft.item.ModItems;
 import net.luhcarti.dutchcraft.loot.AddItemModifier;
 import net.minecraft.data.PackOutput;
@@ -11,7 +11,7 @@ import net.minecraftforge.common.loot.LootTableIdCondition;
 
 public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     public ModGlobalLootModifiersProvider(PackOutput output) {
-        super(output, DutchFoods.MOD_ID);
+        super(output, DutchCraft.MOD_ID);
     }
 
     @Override
