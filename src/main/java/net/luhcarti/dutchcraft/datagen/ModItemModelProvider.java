@@ -1,6 +1,6 @@
 package net.luhcarti.dutchcraft.datagen;
 
-import net.luhcarti.dutchcraft.DutchCraft;
+import net.luhcarti.dutchcraft.DutchFoods;
 import net.luhcarti.dutchcraft.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -8,7 +8,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, DutchCraft.MOD_ID, existingFileHelper);
+        super(output, DutchFoods.MOD_ID, existingFileHelper);
     }
 
     @Override

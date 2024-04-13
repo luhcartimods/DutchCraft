@@ -1,7 +1,7 @@
 package net.luhcarti.dutchcraft.event;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.luhcarti.dutchcraft.DutchCraft;
+import net.luhcarti.dutchcraft.DutchFoods;
 import net.luhcarti.dutchcraft.item.ModItems;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = DutchCraft.MOD_ID)
+@Mod.EventBusSubscriber(modid = DutchFoods.MOD_ID)
 public class ModEvents {
 
     @SubscribeEvent

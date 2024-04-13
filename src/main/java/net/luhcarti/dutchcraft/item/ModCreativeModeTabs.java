@@ -1,6 +1,6 @@
 package net.luhcarti.dutchcraft.item;
 
-import net.luhcarti.dutchcraft.DutchCraft;
+import net.luhcarti.dutchcraft.DutchFoods;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DutchCraft.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DutchFoods.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> DUTCH_TAB = CREATIVE_MODE_TABS.register("dutch_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STROOPWAFEL.get()))

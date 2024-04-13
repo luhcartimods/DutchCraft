@@ -1,11 +1,10 @@
 package net.luhcarti.dutchcraft.block;
 
-import net.luhcarti.dutchcraft.DutchCraft;
+import net.luhcarti.dutchcraft.DutchFoods;
 import net.luhcarti.dutchcraft.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,7 +14,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, DutchCraft.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, DutchFoods.MOD_ID);
 
 
 

@@ -1,6 +1,6 @@
 package net.luhcarti.dutchcraft.item;
 
-import net.luhcarti.dutchcraft.DutchCraft;
+import net.luhcarti.dutchcraft.DutchFoods;
 import net.luhcarti.dutchcraft.entity.ModEntities;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, DutchCraft.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, DutchFoods.MOD_ID);
 
     public static final RegistryObject<Item> STROOPWAFEL = ITEMS.register("stroopwafel",
             () -> new Item(new Item.Properties().food(ModFoods.STROOPWAFEL)));

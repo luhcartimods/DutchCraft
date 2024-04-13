@@ -9,8 +9,6 @@ import net.luhcarti.dutchcraft.item.ModCreativeModeTabs;
 import net.luhcarti.dutchcraft.item.ModItems;
 import net.luhcarti.dutchcraft.loot.ModLootModifiers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -23,15 +21,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-import javax.swing.text.html.parser.Entity;
-
-@Mod(DutchCraft.MOD_ID)
-public class DutchCraft
+@Mod(DutchFoods.MOD_ID)
+public class DutchFoods
 {
-    public static final String MOD_ID = "dutchcraft";
+    public static final String MOD_ID = "dutchfoods";
 
     private static final Logger LOGGER = LogUtils.getLogger();
-    public DutchCraft()
+    public DutchFoods()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
