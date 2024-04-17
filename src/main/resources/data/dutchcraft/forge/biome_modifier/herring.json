@@ -5,6 +5,4 @@
     "type": "dutchcraft:herring",
     "maxCount": 5,
     "minCount": 1,
-    "weight": 100
-  }
-}
+    "weight": 100000000
