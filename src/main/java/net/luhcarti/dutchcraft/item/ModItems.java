@@ -30,9 +30,6 @@ public class ModItems {
     public static final RegistryObject<Item> APPLE_PIE = ITEMS.register("apple_pie",
             () -> new Item(new Item.Properties().food(ModFoods.APPLE_PIE)));
 
-    public static final RegistryObject<Item> GOUDA = ITEMS.register("gouda",
-            () -> new Item(new Item.Properties().food(ModFoods.GOUDA)));
-
     public static final RegistryObject<MobBucketItem> BUCKET_OF_HERRING =
             ITEMS.register("bucket_of_herring", () -> new MobBucketItem(() -> ModEntities.HERRING.get(), () -> Fluids.WATER, ()-> SoundEvents.BUCKET_EMPTY_FISH, new Item.Properties().stacksTo(1)));
 

@@ -23,7 +23,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_HERRING.get());
                         pOutput.accept(ModItems.COOKED_HERRING.get());
                         pOutput.accept(ModItems.APPLE_PIE.get());
-                        pOutput.accept(ModItems.GOUDA.get());
                         pOutput.accept(ModItems.BUCKET_OF_HERRING.get());
                         pOutput.accept(ModItems.HERRING_SPAWN_EGG.get());
 

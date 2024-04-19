@@ -2,11 +2,10 @@
   "item.dutchcraft.stroopwafel": "Stroopwafel",
   "item.dutchcraft.pea_stew": "Pea Stew",
   "item.dutchcraft.apple_pie": "Apple Pie",
-  "item.dutchcraft.gouda": "Gouda",
   "item.dutchcraft.herring_spawn_egg": "Herring Spawn Egg",
   "item.dutchcraft.bucket_of_herring": "Bucket Of Herring",
   "item.dutchcraft.raw_herring": "Raw Herring",
   "item.dutchcraft.cooked_herring": "Cooked Herring",
 
-  "creativetab.ducth_tab": "Dutch Items"
+  "creativetab.dutch_tab": "Dutch Items"
 }

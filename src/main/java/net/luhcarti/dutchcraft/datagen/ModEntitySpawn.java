@@ -28,13 +28,12 @@ public record ModEntitySpawn (HolderSet<Biome> biomes, MobSpawnSettings.SpawnerD
     @Override
     public void modify(Holder<Biome> biome, Phase phase, ModifiableBiomeInfo.BiomeInfo.Builder builder) {
         if (phase == Phase.ADD && this.biomes.contains(biome)) {
-            builder.getMobSpawnSettings().addSpawn(MobCategory.MONSTER, this.spawn).addSpawn(MobCategory.CREATURE, this.spawn);
+            builder.getMobSpawnSettings().addSpawn(MobCategory.WATER_CREATURE, this.spawn).addSpawn(MobCategory.CREATURE, this.spawn);
         }
     }
 
     @Override
     public Codec<? extends BiomeModifier> codec() {
-        return HERRING_SPAWN_CODEC  .get();
+        return HERRING_SPAWN_CODEC.get();
     }
-
 }
